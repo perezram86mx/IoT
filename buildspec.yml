@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+
+  pre_build:
+    commands:
+      - echo "Starting validation..."
+
+  build:
+    commands:
+      - echo "Testing application files..."
+      - test -f index.html
+      - test -f styles.css
+      - test -f app.js
+      - grep -q "IoT Industrial Dashboard" index.html
+      - echo "All tests passed!"
+
+artifacts:
+  files:
+    - index.html
+    - styles.css
+    - app.js

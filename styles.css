@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #10151c;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    padding: 30px;
+    background: #202b38;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px;
+}
+
+.sensor {
+    background: #263747;
+    padding: 25px;
+    border-radius: 12px;
+    min-width: 180px;
+}
+
+.sensor p {
+    font-size: 28px;
+    color: #43c1cb;
+}
+
+button {
+    padding: 14px 25px;
+    background: #f7901e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IoT Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IoT Industrial Dashboard</h1>
+        <p>Monitor de sensores industriales</p>
+    </header>
+
+    <main class="dashboard">
+        <div class="sensor">
+            <h2>Temperatura</h2>
+            <p id="temperature">28.5 °C</p>
+        </div>
+
+        <div class="sensor">
+            <h2>Humedad</h2>
+            <p id="humidity">65 %</p>
+        </div>
+
+        <div class="sensor">
+            <h2>Vibración</h2>
+            <p id="vibration">2.4 mm/s</p>
+        </div>
+
+        <button onclick="updateSensors()">
+            Actualizar sensores
+        </button>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
